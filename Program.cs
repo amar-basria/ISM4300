@@ -1,27 +1,28 @@
 ﻿using System;
 
-namespace Array
+namespace Methods
 {
     class Program
     {
         static void Main(string[] args)
         {
-            try
+            for (int i = 0; i < 5; i++)
             {
-                int size = 25;
-                int[] elements = new int[size];
-                for(int i=0; i <=25; i++)
-                {
-                    elements[i] = i+1;
-                    Console.WriteLine("Element Value = " + elements[i]);
+                GetName();
 
+
+            }
+
+                void GetName()
+                {
+
+                    Console.WriteLine("Please enter your name: ");
+                    string name = Console.ReadLine();
+                    Console.WriteLine("Hello " + name + "!");
                 }
-                
-            }
-            catch
-            {
-                Console.ReadKey();
-            }
+
+            
+
         }
     }
 }
